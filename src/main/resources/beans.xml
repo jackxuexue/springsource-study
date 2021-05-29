@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+<!--
+        Hello hello  = new Hello();
+        1. id 类似于变量名
+        2. class: 类似于全类名
+        3. property: 通过setter方法注入参数
+    -->
+    <import resource="cars.xml"></import>
+
+   <!-- <bean id="user" class="com.jackxue.pojo.User">
+        <property name="userName" value="jackxue"/>
+        <property name="password" value="123456" />
+    </bean>-->
+
+    <context:annotation-config/>
+<!--    <context:component-scan base-package="com.jackxue.test" />-->
+</beans>
